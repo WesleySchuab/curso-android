@@ -23,5 +23,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void criarObjeto(){
         Livro objLivro = new Livro();
+        objLivro.setAutor("M");
+        objLivro.setTitulo("B");
+        objLivro.setEditora("ER");
+        objLivro.setLocalizacao("MG");
+
     }
 }
