@@ -1,10 +1,22 @@
 package com.example.pookotlinencapsulamento
 
-public class Book(
-    var title: String,
-    var author: String,
-    var publisher: String,
-    var location: String,
-    var page: Int
+class Book(
+    private var _title: String,
+    private var _author: String,
+    private var _publisher: String,
+    private var _location: String,
+    private var _page: Int
 ) {
+    var title: String
+        get() = _title
+        set(value) {
+            _title = value
+        }
+
+    var author: String
+        get() = _author
+        set(value) {
+            _author = value
+        }
 }
+
