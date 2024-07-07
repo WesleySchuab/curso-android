@@ -1,6 +1,7 @@
 package com.example.pookotlinencapsulamento
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -18,9 +19,14 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         createObjects()
+        startingLayoultsComponents()
 
     }
 
+    private fun startingLayoultsComponents() {
+        var txtTitle = findViewById<TextView>(R.id.txtTitle)
+        var txtAthor= findViewById<TextView>(R.id.txtAuthor)
+    }
 
 
     private fun createObjects() {
