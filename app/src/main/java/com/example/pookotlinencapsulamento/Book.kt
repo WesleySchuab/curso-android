@@ -1,7 +1,7 @@
 package com.example.pookotlinencapsulamento
 
-public class book(
-    var tilte: String,
+public class Book(
+    var title: String,
     var author: String,
     var publisher: String,
     var location: String,
